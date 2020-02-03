@@ -1,0 +1,444 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+
+}
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+@Scripts.Render("~/bundles/jquery")
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Moratte Tattoo Studio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <li><a class="path" href="#1">Nosotros  </a>   </li>
+
+                <li><a class="path" href="#2">Trabajos</a>   </li>
+                <li><a class="path" href="#3">Lo que hacemos</a>   </li>
+
+
+                <li><a class="path" href="#4">Nuestros artistas</a>   </li>
+                @*<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Nosotros", "About", "Home")</li>*@
+                <li>@Html.ActionLink("Nuestros artistas", "Contact", "Home")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="banner-principal">
+    <div>
+        <p style="text-align:center;">Morante Tattoo Studio</p>
+        <div style="text-align:center" class="banner-description"> <b>    Estudio de tatuajes y piercings en Temperley </b></div>
+    </div>
+</div>
+
+
+<div class="container-gral">
+    <div id="1">
+        <p class="title">Sobre nosotros</p>
+    </div>
+
+    <div class="container-two">
+        <div class="about-description">
+
+            <b>Matias Morante</b>
+            <br />
+
+            Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
+            Atendemos de lunes a sábado de 10 a 20hs. matias_morante
+            wa.me/5491169297777
+        </div>
+
+        <div class="about-img">
+            Foto
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-gral">
+    <div id="2">
+        <p class="title">Nuestros trabajos</p>
+    </div>
+    <div class="image-gallery"></div>
+</div>
+<div id="3" class="container-pro container-gral">
+    <div >
+        <p class="title">Que es lo que hacemos.</p>
+    </div>
+    <div>
+        <p class="description">
+            Nuestra misión es brindarle arte de tatuajes original y de calidad utilizando técnicas avanzadas de esterilización, producidas en un ambiente cómodo y seguro por profesionales.
+        </p>
+    </div>
+
+    <div class="container-four">
+
+        <div class="container-inside-four">
+            <div class="maquina-ico hover1"></div>
+            <p>Tattoos</p>
+            <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
+            <a href="#">content</a>
+        </div>
+
+        <div class="container-inside-four">
+            <div class="pircing-ico hover2"></div>
+            <p>Pircings</p>
+            <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
+            <a href="#">content</a>
+        </div>
+
+        <div class="container-inside-four">
+            <div class="cover-ico hover3"></div>
+            <p>Cover</p>
+            <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
+            <a href="#">content</a>
+        </div>
+
+        <div class="container-inside-four">
+            <div class="desing-ico hover4"></div>
+            <p>Tattoo Design</p>
+            <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
+            <a href="#">content</a>
+        </div>
+
+    </div>
+
+
+
+</div>
+<div class="container-pro container-gral">
+    <div class="artist-marmol">
+        <div id="4">
+            <p class="title" style="color:white;">Nuestros artistas</p>
+        </div>
+        <div>
+            <p class=" description" style="color:white;">
+                Nuestro equipo de tatuadores representa la verdadera profesionalidad y dedicación en todo lo que concierne a los tatuajes duraderos y de alta calidad.
+            </p>
+        </div>
+
+
+
+        <div class="container-three">
+
+
+
+            <div class="container-inside-three">
+                <div class="artist-img-1">
+
+
+                </div>
+                <b>Matias Morantte</b>
+                <p>Descripcion</p>
+                <a href="#">content</a>
+            </div>
+
+            <div class="container-inside-three">
+
+                <div class="artist-container">
+
+                    <div class="artist-img-2"></div>
+
+                    <div class="artist-description">
+                        <b>Marcos Kimosabi</b>
+                        <p>Estilos: cubismo, geometrico.</p>
+                        <a href="#">content</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-inside-three">
+                <div class="artist-img-3">
+
+
+                </div>
+                <b>Matias Morantte</b>
+                <p>Descripcion</p>
+                <a href="#">content</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="title"> Como llegar? </div>
+
+<divc class="container-two">
+    <div class="ubication">mapa</div>
+    <div style="text-align:center">
+        Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
+        Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
+        wa.me/5491169297777
+    </div>
+</divc>
+
+<div class="footer">
+
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('a[href^="#"]').click(function () {
+            var destino = $(this.hash);
+            if (destino.length == 0) {
+                destino = $('a[name="' + this.hash.substr(1) + '"]');
+            }
+            if (destino.length == 0) {
+                destino = $('html');
+            }
+            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+            return false;
+        });
+    });
+        
+</script>
+
+<style>
+
+    .artist-marmol {
+        background-image: url("Content/imagenes/fondo-marmol-5.jpg");
+       // background-size: cover;
+        //background-position: center center;
+        //background-repeat: no-repeat;
+    }
+
+    .artist-description {
+        background-color: white;
+        position: absolute;
+        left: 124px;
+        top: 75%;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .artist-container{
+        position: relative;
+    }
+
+
+    .ubication {
+        background-image: url("Content/imagenes/ubicacion.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        //background-color: #22222296;
+    }
+
+    .container-gral{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .path {
+        transition: 1s;
+    }
+
+    .footer {
+        height: 300px;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .container-inside-three {
+        width: 30%;
+        text-align: center;
+    }
+
+    .artist-img-1 {
+        background-image: url("Content/imagenes/matias-mornate-design.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    .artist-img-2 {
+        background-image: url("Content/imagenes/marcos-kimo.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    .artist-img-3 {
+        background-image: url("Content/imagenes/matias-mornate-design.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+
+    .container-inside-four {
+        width: 25%;
+        text-align: center;
+    }
+
+    .maquina-ico {
+        margin: auto auto;
+        background-image: url("Content/imagenes/maquina-ico.png");
+        width: 100px;
+        background-size: cover;
+        height: 100px;
+    }
+
+    .pircing-ico {
+        margin: auto auto;
+        background-image: url("Content/imagenes/pircing-ico.png");
+        width: 100px;
+        background-size: cover;
+        height: 100px;
+    }
+
+    .cover-ico {
+        margin: auto auto;
+        background-image: url("Content/imagenes/cover-ico.png");
+        width: 100px;
+        background-size: cover;
+        height: 100px;
+    }
+
+    .desing-ico {
+        margin: auto auto;
+        background-image: url("Content/imagenes/desing-ico.png");
+        width: 100px;
+        background-size: cover;
+        height: 100px;
+    }
+
+    .image-gallery {
+        background-image: url("Content/imagenes/banner.jpg");
+        width: 100%;
+        height: 200px;
+    }
+
+    .banner-principal p {
+        font-size: 70px;
+        color: white;
+    }
+
+    .banner-description {
+        font-size: 30px;
+        color: white;
+    }
+
+
+    .banner-principal {
+        background-image: url("Content/imagenes/banner.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+    }
+
+    .about-description {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .about-img {
+        background-image: url("Content/imagenes/matias-morantte.jpg");
+        background-size: auto;
+        background-position: center center;
+        height: 350px;
+        width: 100%;
+    }
+
+    .container-pro {
+        /*background-color: gray;
+                opacity: 0.5;
+                margin: 10px;*/
+    }
+
+    .title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container-four {
+        width: 75%;
+        //background-color: red;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        margin: auto auto;
+        transition: all .2s ease-in-out;
+    }
+
+
+
+
+    .hover1:hover {
+        transition: all .2s ease-in-out;
+        transform: scale(1.2);
+    }
+    .hover2:hover {
+        transition: all .2s ease-in-out;
+        transform: scale(1.2);
+    }
+    .hover3:hover {
+        transition: all .2s ease-in-out;
+        transform: scale(1.2);
+    }
+    .hover4:hover {
+        transition: all .2s ease-in-out;
+        transform: scale(1.2);
+    }
+
+        .container-three {
+            width: 75%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+        }
+
+    .container-two {
+        width: 75%;
+        //background-color: red;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        margin: auto auto;
+    }
+</style>
