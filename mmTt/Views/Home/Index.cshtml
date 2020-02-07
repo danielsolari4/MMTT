@@ -139,19 +139,25 @@
 
 
             <div class="container-inside-three">
-                <div class="artist-img-1">
 
+                <div class="artist-container">
 
+                    <div class="artist-img-3"></div>
+
+                    <div class="artist-description">
+                        <b>Marcos Kimosabi</b>
+                        <p>Estilos: cubismo, geometrico.</p>
+                        <a href="#">content</a>
+                    </div>
                 </div>
-                <b>Matias Morantte</b>
-                <p>Descripcion</p>
-                <a href="#">content</a>
+
             </div>
 
             <div class="container-inside-three">
 
                 <div class="artist-container">
 
+                    <img src="#" alt="Alternate Text" />
                     <div class="artist-img-2"></div>
 
                     <div class="artist-description">
@@ -163,16 +169,19 @@
             </div>
 
             <div class="container-inside-three">
-                <div class="artist-img-3">
 
+                <div class="artist-container">
 
+                    <div class="artist-img-3"></div>
+
+                    <div class="artist-description">
+                        <b>Marcos Kimosabi</b>
+                        <p>Estilos: cubismo, geometrico.</p>
+                        <a href="#">content</a>
+                    </div>
                 </div>
-                <b>Matias Morantte</b>
-                <p>Descripcion</p>
-                <a href="#">content</a>
-            </div>
 
-        </div>
+            </div>
     </div>
 
 
@@ -208,12 +217,49 @@
             return false;
         });
     });
+
+
+//    {
+//  "id": "1",
+//  "url": "COntent/asdasd/asd.jpg",
+//  "title": "Morante Matias",
+//  "description": "Cubismo,geometria"
+//}
+
+
+    $.ajax({
+        //data:
+        type: "GET",
+        dataType: "json",
+        url: "Content/imagenes/galery.json"
+    })
+        .done(function (data) {
+            debugger;
+            var galleryDinamyc = '';
+            
+
+            
+
+            $.each(data, function (key, value) {
+                
+                galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+
+            });
+
+            //for (var i = 0; i < data.length(); i++) {
+            //    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+            //}
+
+            $(".container-three").html(galleryDinamyc);
+        });
         
 </script>
 
 <style>
 
     .artist-marmol {
+        padding: 20px 10px;
+        height:70%;
         background-image: url("Content/imagenes/fondo-marmol-5.jpg");
        // background-size: cover;
         //background-position: center center;
@@ -430,6 +476,7 @@
             display: flex;
             flex-direction: row;
             margin: auto auto;
+            height: 200px;
         }
 
     .container-two {
