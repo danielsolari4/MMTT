@@ -238,12 +238,13 @@
 
             var galleryDinamyc = '';
             
+            
 
             
 
             $.each(data, function (key, value) {
-                
-                galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+                debugger;   
+                galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + data.adsasdayPhotos[value].url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + data.adsasdayPhotos.title + '"</b>                        <p>Estilos: "' + data.adsasdayPhotos.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
 
             });
 

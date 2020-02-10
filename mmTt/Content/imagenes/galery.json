@@ -1,6 +1,19 @@
 {
+"adsasdayPhotos":[
+
+{
   "id": "1",
   "url": "Content/imagenes/marcos-kimo.jpg",
-  "title": "Morante Matias",
+  "title": "Marcos kimosabi Matias",
   "description": "Cubismo,geometria"
+},
+{
+  "id": "2",
+  "url": "Content/imagenes/marcos-kimo.jpg",
+  "title": "asdsdadas",
+  "description": "Cubismo,geometria"
+}
+
+]
+
 }
