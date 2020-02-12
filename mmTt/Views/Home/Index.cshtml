@@ -29,8 +29,9 @@
 
                 <li><a class="path" href="#4">Nuestros artistas</a>   </li>
                 @*<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                <li>@Html.ActionLink("Nosotros", "About", "Home")</li>*@
-                <li>@Html.ActionLink("Nuestros artistas", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Nosotros", "About", "Home")</li>
+                    <li>@Html.ActionLink("Nuestros artistas", "Contact", "Home")</li>
+                *@
             </ul>
         </div>
     </div>
@@ -38,13 +39,13 @@
 
 
 <div class="banner-principal">
-    <div>
-        <p style="text-align:center;">Morante Tattoo Studio</p>
-        <div style="text-align:center" class="banner-description"> <b>    Estudio de tatuajes y piercings en Temperley </b></div>
-    </div>
+    @*<div>
+            <p style="text-align:center;">Morante Tattoo Studio</p>
+            <div style="text-align:center" class="banner-description"> <b>    Estudio de tatuajes y piercings en Temperley </b></div>
+        </div>*@
 </div>
 
-
+@*SOBRE NOSOTROS*@
 <div class="container-gral">
     <div id="1">
         <p class="title">Sobre nosotros</p>
@@ -70,14 +71,18 @@
 
 </div>
 
+
+@*NUESTROS TRABAJOS*@
 <div class="container-gral">
     <div id="2">
         <p class="title">Nuestros trabajos</p>
     </div>
     <div class="image-gallery"></div>
 </div>
+
+@*QUE ES LO QUE HACEMOS*@
 <div id="3" class="container-pro container-gral">
-    <div >
+    <div>
         <p class="title">Que es lo que hacemos.</p>
     </div>
     <div>
@@ -121,6 +126,8 @@
 
 
 </div>
+
+@*NUESTROS ARTISTAS*@
 <div class="container-pro container-gral">
     <div class="artist-marmol">
         <div id="4">
@@ -138,7 +145,7 @@
 
 
 
-            <div class="container-inside-three">
+            @*<div class="container-inside-three">
 
                 <div class="artist-container">
 
@@ -181,294 +188,308 @@
                     </div>
                 </div>
 
-            </div>
+            </div>*@
+        </div>
+
+
+
     </div>
 
 
 
 </div>
 
-<div class="title"> Como llegar? </div>
+@*COMO LLEGAR*@
+<div class="container-pro container-gral">
 
-<divc class="container-two">
-    <div class="ubication">mapa</div>
-    <div style="text-align:center">
-        Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
-        Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
-        wa.me/5491169297777
+    <div class="title"> Como llegar? </div>
+
+    <div class="container-two">
+        <div class="ubication">mapa</div>
+        <div style="text-align:center">
+            Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
+            Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
+            wa.me/5491169297777
+        </div>
     </div>
-</divc>
 
-<div class="footer">
+    </div>
 
-</div>
-<script>
 
-    $(document).ready(function () {
-        $('a[href^="#"]').click(function () {
-            var destino = $(this.hash);
-            if (destino.length == 0) {
-                destino = $('a[name="' + this.hash.substr(1) + '"]');
-            }
-            if (destino.length == 0) {
-                destino = $('html');
-            }
-            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-            return false;
+    <div class="footer">
+
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+                var destino = $(this.hash);
+                if (destino.length == 0) {
+                    destino = $('a[name="' + this.hash.substr(1) + '"]');
+                }
+                if (destino.length == 0) {
+                    destino = $('html');
+                }
+                $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+                return false;
+            });
         });
-    });
 
 
-//    {
-//  "id": "1",
-//  "url": "COntent/asdasd/asd.jpg",
-//  "title": "Morante Matias",
-//  "description": "Cubismo,geometria"
-//}
+        //    {
+        //  "id": "1",
+        //  "url": "COntent/asdasd/asd.jpg",
+        //  "title": "Morante Matias",
+        //  "description": "Cubismo,geometria"
+        //}
 
 
-    $.ajax({
-        //data:
-        type: "GET",
-        dataType: "json",
-        url: "Content/imagenes/galery.json"
-    })
-        .done(function (data) {
-            debugger;
+        $.ajax({
+            //data:
+            type: "GET",
+            dataType: "json",
+            url: "Content/imagenes/galery.json"
+        })
+            .done(function (data) {
+                debugger;
 
-            var galleryDinamyc = '';
-            
-            
+                var galleryDinamyc = '';
 
-            
 
-            $.each(data, function (key, value) {
-                debugger;   
-                galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + data.adsasdayPhotos[value].url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + data.adsasdayPhotos.title + '"</b>                        <p>Estilos: "' + data.adsasdayPhotos.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
 
+
+
+                $.each(data, function (i, item) {
+                    debugger;
+                    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + data.adsasdayPhotos[i].url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + data.adsasdayPhotos.title + '"</b>                        <p>Estilos: "' + data.adsasdayPhotos.description + '"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+
+                });
+
+                //for (var i = 0; i < data.length(); i++) {
+                //    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+                //}
+
+                $(".container-three").html(galleryDinamyc);
             });
 
-            //for (var i = 0; i < data.length(); i++) {
-            //    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
-            //}
+    </script>
 
-            $(".container-three").html(galleryDinamyc);
-        });
-        
-</script>
+    <style>
 
-<style>
+        .artist-marmol {
+            padding: 20px 10px;
+            height: 70%;
+            background-image: url("Content/imagenes/fondo-marmol-5.jpg");
+            // background-size: cover;
+            //background-position: center center;
+            //background-repeat: no-repeat;
+        }
 
-    .artist-marmol {
-        padding: 20px 10px;
-        height:70%;
-        background-image: url("Content/imagenes/fondo-marmol-5.jpg");
-       // background-size: cover;
-        //background-position: center center;
-        //background-repeat: no-repeat;
-    }
+        .artist-description {
+            background-color: white;
+            position: absolute;
+            left: 124px;
+            top: 75%;
+            width: 200px;
+            border-radius: 5px;
+        }
 
-    .artist-description {
-        background-color: white;
-        position: absolute;
-        left: 124px;
-        top: 75%;
-        width: 200px;
-        border-radius: 5px;
-    }
-
-    .artist-container{
-        position: relative;
-    }
+        .artist-container {
+            position: relative;
+        }
 
 
-    .ubication {
-        background-image: url("Content/imagenes/ubicacion.png");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 500px;
-    }
+        .ubication {
+            background-image: url("Content/imagenes/ubicacion.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+        }
 
-    body {
-        font-family: 'Roboto', sans-serif;
-        //background-color: #22222296;
-    }
+        body {
+            font-family: 'Roboto', sans-serif;
+            //background-color: #22222296;
+        }
 
-    .container-gral{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+        .container-gral {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-    .path {
-        transition: 1s;
-    }
+        .path {
+            transition: 1s;
+        }
 
-    .footer {
-        height: 300px;
-        width: 100%;
-        background-color: gray;
-    }
+        .footer {
+            height: 300px;
+            width: 100%;
+            background-color: gray;
+        }
 
-    .container-inside-three {
-        width: 30%;
-        text-align: center;
-    }
+        .container-inside-three {
+            width: 30%;
+            text-align: center;
+        }
 
-    .artist-img-1 {
-        background-image: url("Content/imagenes/matias-mornate-design.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
-        border-radius: 5px;
-    }
+        .artist-img-1 {
+            background-image: url("Content/imagenes/matias-mornate-design.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
 
-    .artist-img-2 {
-        background-image: url("Content/imagenes/marcos-kimo.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
-        border-radius: 5px;
-    }
+        .artist-img-2 {
+            background-image: url("Content/imagenes/marcos-kimo.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
 
-    .artist-img-3 {
-        background-image: url("Content/imagenes/matias-mornate-design.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
-    }
+        .artist-img-3 {
+            background-image: url("Content/imagenes/matias-mornate-design.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+        }
 
-    .container-inside-four {
-        width: 25%;
-        text-align: center;
-    }
+        .container-inside-four {
+            width: 25%;
+            text-align: center;
+        }
 
-    .maquina-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/maquina-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
+        .maquina-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/maquina-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
 
-    .pircing-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/pircing-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
+        .pircing-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/pircing-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
 
-    .cover-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/cover-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
+        .cover-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/cover-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
 
-    .desing-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/desing-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
+        .desing-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/desing-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
 
-    .image-gallery {
-        background-image: url("Content/imagenes/banner.jpg");
-        width: 100%;
-        height: 200px;
-    }
+        .image-gallery {
+            background-image: url("Content/imagenes/banner.jpg");
+            width: 100%;
+            height: 200px;
+        }
 
-    .banner-principal p {
-        font-size: 70px;
-        color: white;
-    }
+        .banner-principal p {
+            font-size: 70px;
+            color: white;
+        }
 
-    .banner-description {
-        font-size: 30px;
-        color: white;
-    }
+        .banner-description {
+            font-size: 30px;
+            color: white;
+        }
 
 
-    .banner-principal {
-        background-image: url("Content/imagenes/banner.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 400px;
-        width: 100%;
-    }
+        .banner-principal {
+            //background-image: url("Content/imagenes/banner.jpg");
+            background-image: url("Content/imagenes/banners/matias-banner.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 580px;
+            width: 100%;
+        }
 
-    .about-description {
-        font-size: 20px;
-        width: 50%;
-    }
+        .about-description {
+            font-size: 20px;
+            width: 50%;
+        }
 
-    .about-img {
-        background-image: url("Content/imagenes/matias-morantte.jpg");
-        background-size: auto;
-        background-position: center center;
-        height: 350px;
-        width: 100%;
-    }
+        .about-img {
+            background-image: url("Content/imagenes/matias-morantte.jpg");
+            background-size: auto;
+            background-position: center center;
+            height: 350px;
+            width: 100%;
+        }
 
-    .container-pro {
-        /*background-color: gray;
+        .container-pro {
+            /*background-color: gray;
                 opacity: 0.5;
                 margin: 10px;*/
-    }
+        }
 
-    .title {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 40px;
-        text-align: center;
-    }
+        .title {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            text-align: center;
+        }
 
-    .description {
-        font-size: 25px;
-        text-align: center;
-    }
+        .description {
+            font-size: 25px;
+            text-align: center;
+        }
 
-    .container-four {
-        width: 75%;
-        //background-color: red;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin: auto auto;
-        transition: all .2s ease-in-out;
-    }
-
-
+        .container-four {
+            width: 75%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+            transition: all .2s ease-in-out;
+        }
 
 
-    .hover1:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-    .hover2:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-    .hover3:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-    .hover4:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
+
+
+        .hover1:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .hover2:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .hover3:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .hover4:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
 
         .container-three {
             width: 75%;
@@ -481,13 +502,13 @@
             height: 200px;
         }
 
-    .container-two {
-        width: 75%;
-        //background-color: red;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin: auto auto;
-    }
-</style>
+        .container-two {
+            width: 75%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+        }
+    </style>
