@@ -255,13 +255,9 @@
 
                 var galleryDinamyc = '';
 
-
-
-
-
-                $.each(data, function (i, item) {
+                $.each(data.jsonPhotos, function (i, item) {
                     debugger;
-                    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + data.adsasdayPhotos[i].url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + data.adsasdayPhotos.title + '"</b>                        <p>Estilos: "' + data.adsasdayPhotos.description + '"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+                    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + item.url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + item.title + '"</b>                        <p>Estilos: "' + item.description + '"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
 
                 });
 
@@ -296,6 +292,14 @@
 
         .artist-container {
             position: relative;
+        }
+        .artist-container img{
+             background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
         }
 
 

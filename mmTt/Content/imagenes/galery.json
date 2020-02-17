@@ -1,19 +1,25 @@
 {
-"adsasdayPhotos":[
+  "jsonPhotos": [
 
-{
-  "id": "1",
-  "url": "Content/imagenes/marcos-kimo.jpg",
-  "title": "Marcos kimosabi Matias",
-  "description": "Cubismo,geometria"
-},
-{
-  "id": "2",
-  "url": "Content/imagenes/marcos-kimo.jpg",
-  "title": "asdsdadas",
-  "description": "Cubismo,geometria"
-}
+    {
+      "id": "1",
+      "url": "Content/imagenes/marcos-kimo.jpg",
+      "title": "Marcos kimosabi Matias",
+      "description": "Cubismo,geometria"
+    },
+    {
+      "id": "2",
+      "url": "Content/imagenes/marcos-kimo.jpg",
+      "title": "asdsdadas",
+      "description": "Cubismo,geometria"
+    },
+    {
+      "id": "3",
+      "url": "Content/imagenes/marcos-kimo.jpg",
+      "title": "asdsdadas",
+      "description": "Cubismo,geometria"
+    }
 
-]
+  ]
 
 }
