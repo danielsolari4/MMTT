@@ -43,6 +43,14 @@
             <p style="text-align:center;">Morante Tattoo Studio</p>
             <div style="text-align:center" class="banner-description"> <b>    Estudio de tatuajes y piercings en Temperley </b></div>
         </div>*@
+
+    <div class="banner-container-cajita">
+        <p style="text-align:center;">Morante Tattoo Studio</p>
+        <button class="button-banner">Conocenos</button>
+    </div>
+
+    
+    <img src="Content/imagenes/logo-pro.jpg" alt="Alternate Text" />
 </div>
 
 @*SOBRE NOSOTROS*@
@@ -145,50 +153,7 @@
 
 
 
-            @*<div class="container-inside-three">
-
-                <div class="artist-container">
-
-                    <div class="artist-img-3"></div>
-
-                    <div class="artist-description">
-                        <b>Marcos Kimosabi</b>
-                        <p>Estilos: cubismo, geometrico.</p>
-                        <a href="#">content</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="container-inside-three">
-
-                <div class="artist-container">
-
-                    <img src="#" alt="Alternate Text" />
-                    <div class="artist-img-2"></div>
-
-                    <div class="artist-description">
-                        <b>Marcos Kimosabi</b>
-                        <p>Estilos: cubismo, geometrico.</p>
-                        <a href="#">content</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-inside-three">
-
-                <div class="artist-container">
-
-                    <div class="artist-img-3"></div>
-
-                    <div class="artist-description">
-                        <b>Marcos Kimosabi</b>
-                        <p>Estilos: cubismo, geometrico.</p>
-                        <a href="#">content</a>
-                    </div>
-                </div>
-
-            </div>*@
+            
         </div>
 
 
@@ -251,12 +216,10 @@
             url: "Content/imagenes/galery.json"
         })
             .done(function (data) {
-                debugger;
 
                 var galleryDinamyc = '';
 
                 $.each(data.jsonPhotos, function (i, item) {
-                    debugger;
                     galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + item.url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + item.title + '"</b>                        <p>Estilos: "' + item.description + '"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
 
                 });
@@ -274,7 +237,7 @@
 
         .artist-marmol {
             padding: 20px 10px;
-            height: 70%;
+            height: 500px;
             background-image: url("Content/imagenes/fondo-marmol-5.jpg");
             // background-size: cover;
             //background-position: center center;
@@ -285,7 +248,7 @@
             background-color: white;
             position: absolute;
             left: 124px;
-            top: 75%;
+            top: 66%;
             width: 200px;
             border-radius: 5px;
         }
@@ -293,14 +256,15 @@
         .artist-container {
             position: relative;
         }
-        .artist-container img{
-             background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 200px;
-            border-radius: 5px;
-        }
+            .artist-container img {
+                margin-top: 300px;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 200px;
+                border-radius: 5px;
+            }
 
 
         .ubication {
@@ -337,18 +301,10 @@
             text-align: center;
         }
 
-        .artist-img-1 {
-            background-image: url("Content/imagenes/matias-mornate-design.jpg");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 200px;
-            border-radius: 5px;
-        }
+        
 
         .artist-img-2 {
-            background-image: url("Content/imagenes/marcos-kimo.jpg");
+            //background-image: url("Content/imagenes/marcos-kimo.jpg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -357,14 +313,7 @@
             border-radius: 5px;
         }
 
-        .artist-img-3 {
-            background-image: url("Content/imagenes/matias-mornate-design.jpg");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 200px;
-        }
+        
 
         .container-inside-four {
             width: 25%;
@@ -417,18 +366,42 @@
         .banner-description {
             font-size: 30px;
             color: white;
+            
         }
 
-
-        .banner-principal {
-            //background-image: url("Content/imagenes/banner.jpg");
-            background-image: url("Content/imagenes/banners/matias-banner.jpg");
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 580px;
-            width: 100%;
+        .banner-principal img {
+            margin-top: -25px;
+            margin-left: -80px;
+            width: 1432px;
+            height: 120%;
+            
         }
+
+        .banner-principal{
+            position:relative;
+        }
+
+        .banner-container-cajita {
+            
+            position: absolute;
+            top: 18%;
+            left: 58%;
+        }
+            .banner-container-cajita p{
+                font-size: 100px;
+                top:50%;
+            }
+
+            .banner-aaaprincipal {
+                //background-image: url("Content/imagenes/banner.jpg");
+                background-image: url("Content/imagenes/logo-pro.jpg");
+                //background-image: url("Content/imagenes/banners/matias-banner.jpg");
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 580px;
+                width: 100%;
+            }
 
         .about-description {
             font-size: 20px;
@@ -514,5 +487,25 @@
             display: flex;
             flex-direction: row;
             margin: auto auto;
+        }
+
+        .button-banner {
+            -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            background-color: transparent;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            border: 3px solid #f5e748;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 11px 23px;
+            text-decoration: none;
+            text-shadow: 0px -1px 0px #2b665e;
         }
     </style>
