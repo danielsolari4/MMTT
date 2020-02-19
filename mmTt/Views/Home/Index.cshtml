@@ -4,6 +4,8 @@
 
 }
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap" rel="stylesheet">
 
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/modernizr")
@@ -50,7 +52,7 @@
     </div>
 
     
-    <img src="Content/imagenes/logo-pro.jpg" alt="Alternate Text" />
+    @*<img src="Content/imagenes/logo-pro.jpg" alt="Alternate Text" />*@
 </div>
 
 @*SOBRE NOSOTROS*@
@@ -377,8 +379,14 @@
             
         }
 
-        .banner-principal{
-            position:relative;
+        .banner-principal {
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            background-size:cover;
+            width:100%;
+            height:100%;
+            position: relative;
+            background-image: url("Content/imagenes/logo-pro.jpg");
         }
 
         .banner-container-cajita {
@@ -387,9 +395,11 @@
             top: 18%;
             left: 58%;
         }
-            .banner-container-cajita p{
+            .banner-container-cajita p {
                 font-size: 100px;
-                top:50%;
+                font-family: 'Odibee Sans', cursive;
+                font-family: 'Lacquer', sans-serif;
+                top: 50%;
             }
 
             .banner-aaaprincipal {
