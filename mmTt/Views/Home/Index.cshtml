@@ -103,7 +103,7 @@
 </div>
 
 @*QUE ES LO QUE HACEMOS*@
-<div id="3" class="container-pro container-gral">
+<div id="3" class="container-gral">
     <div>
         <p class="title">Que es lo que hacemos.</p>
     </div>
@@ -117,28 +117,28 @@
 
         <div class="container-inside-four">
             <div class="maquina-ico hover1"></div>
-            <p>Tattoos</p>
+            <h2>Tattoos</h2>
             <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
             <a href="#">content</a>
         </div>
 
         <div class="container-inside-four">
             <div class="pircing-ico hover2"></div>
-            <p>Pircings</p>
+            <h2>Pircings</h2>
             <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
             <a href="#">content</a>
         </div>
 
         <div class="container-inside-four">
             <div class="cover-ico hover3"></div>
-            <p>Cover</p>
+            <h2>Cover</h2>
             <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
             <a href="#">content</a>
         </div>
 
         <div class="container-inside-four">
             <div class="desing-ico hover4"></div>
-            <p>Tattoo Design</p>
+            <h2>Tattoo Design</h2>
             <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
             <a href="#">content</a>
         </div>
@@ -150,7 +150,7 @@
 </div>
 
 @*NUESTROS ARTISTAS*@
-<div class="container-pro container-gral">
+<div class="container-gral">
     <div class="artist-marmol">
         <div id="4">
             <p class="title" style="color:white;">Nuestros artistas</p>
@@ -179,7 +179,7 @@
 </div>
 
 @*COMO LLEGAR*@
-<div class="container-pro container-gral">
+<div class="container-gral">
 
     <div class="title"> Como llegar? </div>
 
@@ -346,6 +346,16 @@
         text-align: center;
     }
 
+        .container-inside-four h2 {
+            font-size: 24px;
+            padding: 7px 10px;
+        }
+        .container-inside-four p {
+            font-size: 14px;
+            width: 100%;
+            padding: 10px 10px;
+        }
+
     .maquina-ico {
         margin: auto auto;
         background-image: url("Content/imagenes/maquina-ico.png");
@@ -458,32 +468,33 @@
         width: 100%;
     }
 
-    .container-pro {
-        /*background-color: gray;
-                opacity: 0.5;
-                margin: 10px;*/
-    }
+    
 
     .title {
         margin-top: 30px;
         margin-bottom: 30px;
         font-size: 40px;
         text-align: center;
+        font-family: 'PT Serif';
     }
 
     .description {
-        font-size: 25px;
+        font-size: 20px;
+        margin: auto auto;
+        width: 75%;
         text-align: center;
+        padding: 10px 10px;
+        font-family: 'PT Serif';
     }
 
     .container-four {
-        width: 75%;
+        width: 83%;
         //background-color: red;
         align-items: center;
         justify-content: space-between;
         display: flex;
         flex-direction: row;
-        margin: auto auto;
+        margin: 35px auto;
         transition: all .2s ease-in-out;
     }
 
