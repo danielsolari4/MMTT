@@ -70,23 +70,47 @@
 @*SOBRE NOSOTROS*@
 <div class="container-gral about-us">
     <div id="1">
-        <p class="title">Sobre Nosotros</p>
+        <p class="title title-about-us">Sobre Nosotros</p>
     </div>
 
     <div class="container-two">
+        <div class="about-img">
+
+        </div>
+
         <div class="about-description">
 
             <b>Nosotros somos un equipo de tatuadores profecionales</b>
             <br />
+            <br />
+            <p>
+                Nuestro salón de tatuajes es el hogar de talentosos tatuadores listos para convertir su cuerpo en un lienzo con bellas imágenes.
+            </p>
 
-            Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
-            Atendemos de lunes a sábado de 10 a 20hs. matias_morante
-            wa.me/5491169297777
+            <p>
+                Hemos reunido al mejor equipo de tatuadores que trabajan a tiempo completo en nuestro salón, y tenemos artistas invitados fantásticos que visitan nuestra tienda.
+            </p>
+
+            <div class="container-three-about-us">
+                <div class="">
+                    <p>1000</p>
+                    <h1>Reviews</h1>
+                </div>
+                <div>
+                    <p>1580</p>
+                    <h1>Tattoos</h1>
+                </div>
+                <div>
+                    <p>975</p>
+                    <h1>Happy Clients</h1>
+                </div>
+            </div>
+
         </div>
 
-        <div class="about-img">
-            
-        </div>
+        <div class="maquina-tattoo"></div>
+
+
     </div>
 
 </div>
@@ -247,9 +271,7 @@
 
 <style>
 
-    .about-us {
-        background-image: url("Content/imagenes/fondo-marmol-5.jpg");
-    }
+
 
     .loguito-head {
         color: #eac80f;
@@ -314,7 +336,6 @@
     }
 
     .container-gral {
-
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -357,6 +378,7 @@
             font-size: 24px;
             padding: 7px 10px;
         }
+
         .container-inside-four p {
             font-size: 14px;
             width: 100%;
@@ -460,11 +482,32 @@
         margin: 45px auto;
     }
 
-    
+    .title-about-us {
+        color: white;
+    }
+
 
     .about-description {
-        font-size: 20px;
+        text-align: center;
+        color: #eac80d;
+        font-size: 18px;
         width: 50%;
+    }
+
+    .about-us {
+        background-image: url("Content/imagenes/fondo-nube-oscuro.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 67%;
+    }
+
+    .about-description p {
+        padding: 10px;
+        color: white;
+    }
+
+    .about-description b {
+        font-size: 22px;
     }
 
     .about-img {
@@ -472,17 +515,28 @@
         background-size: cover;
         background-position: center center;
         height: 350px;
-        width: 100%;
+        width: 54%;
         border-radius: 5px;
     }
 
-    
+
+
+    .maquina-tattoo {
+        background-image: url("Content/imagenes/kisspng-tattoo-machine-tattoo.png");
+        width: 17%;
+        height: 36%;
+        left: 84%;
+        top: 104%;
+        position: absolute;
+        background-size: cover;
+    }
+
+
 
     .title {
-        
         padding: 15px 15px;
         margin-bottom: 30px;
-        font-size: 40px;
+        font-size: 52px;
         text-align: center;
         font-family: 'PT Serif';
     }
@@ -541,8 +595,26 @@
         height: 200px;
     }
 
-    .container-two {
+    .container-three-about-us {
         width: 75%;
+        //background-color: red;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        margin: auto auto;
+        height: 200px;
+    }
+
+    .container-three-about-us p{
+        color:#eab60d;
+        font-size:40px;
+        border-left: 5px solid red;
+    }
+
+
+    .container-two {
+        width: 85%;
         //background-color: red;
         align-items: center;
         justify-content: space-between;
@@ -570,12 +642,14 @@
         //text-decoration: none;
         text-shadow: 0px -1px 0px #2b665e;
     }
-    .button-banner:hover{
-        text-decoration: none;
-        //pointer-events: none;
-    }
+
+        .button-banner:hover {
+            text-decoration: none;
+            //pointer-events: none;
+        }
+
     a:hover, a:focus {
-        color:white;
+        color: white;
         text-decoration: none;
     }
 </style>
