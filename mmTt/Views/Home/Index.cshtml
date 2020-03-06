@@ -11,41 +11,33 @@
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/modernizr")
 @Scripts.Render("~/bundles/jquery")
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            @Html.ActionLink("Moratte Tattoo Studio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand loguito-head" })
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
 
-                <li><a class="path" href="#1">Nosotros  </a>   </li>
-
-                <li><a class="path" href="#2">Trabajos</a>   </li>
-                <li><a class="path" href="#3">Lo que hacemos</a>   </li>
-
-
-                <li><a class="path" href="#4">Nuestros artistas</a>   </li>
-                @*<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Nosotros", "About", "Home")</li>
-                    <li>@Html.ActionLink("Nuestros artistas", "Contact", "Home")</li>
-                *@
-            </ul>
-        </div>
-    </div>
-</div>
 
 
 <div class="banner-principal">
-    @*<div>
-            <p style="text-align:center;">Morante Tattoo Studio</p>
-            <div style="text-align:center" class="banner-description"> <b>    Estudio de tatuajes y piercings en Temperley </b></div>
-        </div>*@
+
+        <video onloadedmetadata="this.muted=true" autoplay muted="muted" loop>
+            <source src="Content/imagenes/slow-tattoo-video.mp4" type="video/mp4" />
+            
+        </video>
+
+    <div class="navbara navbar-inversea navbar-fixed-topa header-menucala">
+        <div class="container">
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nava navbar-nava header-menucala">
+
+                    <li><a class="path" href="#1">MORANTE TATTOO STUDIO</a>   </li>
+                    <li><a class="path" href="#1">NOSOTROS  </a>   </li>
+                    <li><a class="path" href="#2">TRABAJOS</a>   </li>
+                    <li><a class="path" href="#3">LO QUE HACEMOS</a>   </li>
+                    <li><a class="path" href="#4">NUESTROS ARTISTAS</a>   </li>
+                    <li><a class="path" href="#5">COMO LLEGAR</a>   </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="banner-logo-sinfondo"></div>
 
@@ -61,6 +53,7 @@
 
             <a class="button-banner" href="https://wa.me/5491169297777" target="_blank">RESERVA TU TURNO</a>
         </div>
+
     </div>
 
 
@@ -94,14 +87,17 @@
             <div class="container-three-about-us">
                 <div class="">
                     <p>1000</p>
+                    <br />
                     <h1>Reviews</h1>
                 </div>
                 <div>
                     <p>1580</p>
+                    <br />
                     <h1>Tattoos</h1>
                 </div>
                 <div>
                     <p>975</p>
+                    <br />
                     <h1>Happy Clients</h1>
                 </div>
             </div>
@@ -271,6 +267,10 @@
 
 <style>
 
+    video{
+        height:100%;
+        width:100%;
+    }
 
 
     .loguito-head {
@@ -442,7 +442,8 @@
 
     .banner-logo-sinfondo {
         width: 28%;
-        height: 100%;
+        height: 96%;
+        top: 7%;
         left: 130px;
         position: absolute;
         background-image: url(Content/imagenes/logo-pro-pluma-nofondo.png);
@@ -498,7 +499,7 @@
         background-image: url("Content/imagenes/fondo-nube-oscuro.jpg");
         background-position: center center;
         background-size: cover;
-        height: 67%;
+        height: 100%;
     }
 
     .about-description p {
@@ -603,13 +604,13 @@
         display: flex;
         flex-direction: row;
         margin: auto auto;
-        height: 200px;
+        height: 100%;
     }
 
     .container-three-about-us p{
         color:#eab60d;
         font-size:40px;
-        border-left: 5px solid red;
+        border-left: 5px solid white;
     }
 
 
@@ -648,8 +649,26 @@
             //pointer-events: none;
         }
 
-    a:hover, a:focus {
-        color: white;
-        text-decoration: none;
+    .header-menucala {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px
     }
+
+        .header-menucala li a{
+            color: white;
+            //text-decoration: none;
+
+        }
+            .header-menucala li a:hover{
+                opacity: 0.2;
+            }
+
+            a:hover, a:focus {
+                color: white;
+                text-decoration: none;
+            }
 </style>
