@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/modernizr")
@@ -15,34 +16,53 @@
 
 
 <div class="banner-principal">
+    <div class="overlay"></div>
 
+    <div class="video-player">
         <video onloadedmetadata="this.muted=true" autoplay muted="muted" loop>
             <source src="Content/imagenes/slow-tattoo-video.mp4" type="video/mp4" />
-            
         </video>
+    </div>
 
     <div class="navbara navbar-inversea navbar-fixed-topa header-menucala">
         <div class="container">
-            
             <div class="navbar-collapse collapse">
                 <ul class="nava navbar-nava header-menucala">
-
-                    <li><a class="path" href="#1">MORANTE TATTOO STUDIO</a>   </li>
-                    <li><a class="path" href="#1">NOSOTROS  </a>   </li>
-                    <li><a class="path" href="#2">TRABAJOS</a>   </li>
-                    <li><a class="path" href="#3">LO QUE HACEMOS</a>   </li>
-                    <li><a class="path" href="#4">NUESTROS ARTISTAS</a>   </li>
-                    <li><a class="path" href="#5">COMO LLEGAR</a>   </li>
-
+                    <li><a class="path" href="#1">MORANTE TATTOO STUDIO</a></li>
+                    <li><a class="path" href="#1">NOSOTROS</a></li>
+                    <li><a class="path" href="#2">TRABAJOS</a></li>
+                    <li><a class="path" href="#3">LO QUE HACEMOS</a></li>
+                    <li><a class="path" href="#4">NUESTROS ARTISTAS</a></li>
+                    <li><a class="path" href="#5">COMO LLEGAR</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="banner-logo-sinfondo"></div>
+    <div class="banner-logo-sinfondo">
+        <img src="Content/imagenes/logo-pro-pluma-nofondo.png" alt="Logo - Morante" />
+    </div>
 
+    @*<div class="banner-container-cajita">
+
+
+            <p class="banner-bajada"><i>Good Tattoo is...</i></p>
+            <p class="banner-bajada2"><i>an Extension of the <br>Character and Your <br>State of Soul</i></p>
+
+
+
+            <div class="button-banner-pos">
+
+                <a class="button-banner" href="https://wa.me/5491169297777" target="_blank">RESERVA TU TURNO</a>
+            </div>
+
+        </div>*@
+</div>
+
+@**slogan*@
+<div class="container-gral slogan">
     <div class="banner-container-cajita">
-        @*<p style="text-align:center;">Morante Tattoo Studio</p>*@
+
 
         <p class="banner-bajada"><i>Good Tattoo is...</i></p>
         <p class="banner-bajada2"><i>an Extension of the <br>Character and Your <br>State of Soul</i></p>
@@ -55,9 +75,6 @@
         </div>
 
     </div>
-
-
-    @*<img src="Content/imagenes/logo-pro.jpg" alt="Alternate Text" />*@
 </div>
 
 @*SOBRE NOSOTROS*@
@@ -267,10 +284,37 @@
 
 <style>
 
-    video{
-        height:100%;
-        width:100%;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 2;
+        opacity: 0.5;
     }
+
+    .video-player {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+        .video-player video {
+            height: auto;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
 
 
     .loguito-head {
@@ -336,8 +380,7 @@
     }
 
     .container-gral {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 40px 0 60px;
     }
 
     .path {
@@ -433,55 +476,56 @@
         color: white;
     }
 
-    .banner-principal img {
-        margin-top: -25px;
-        margin-left: -80px;
-        width: 1432px;
-        height: 120%;
-    }
+
 
     .banner-logo-sinfondo {
-        width: 28%;
-        height: 96%;
-        top: 7%;
-        left: 130px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         position: absolute;
-        background-image: url(Content/imagenes/logo-pro-pluma-nofondo.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
+        width: 100%;
+        height: 65%;
+        z-index: 3;
     }
+
+        .banner-logo-sinfondo img {
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
 
     .banner-principal {
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
         width: 100%;
-        height: 105%;
+        height: 100vh;
         position: relative;
         background-image: url("Content/imagenes/fondo-horizontal-sinlogo.jpg");
     }
 
     .banner-container-cajita {
-        position: absolute;
-        top: 27%;
-        left: 54%;
+        width: 25%;
+        margin: 10px auto;
     }
 
-        .banner-container-cajita p {
-            //font-size: 100px;
-            /*font-family: 'Odibee Sans', cursive;
-            font-family: 'Lacquer', sans-serif;*/
-            font-family: 'PT Serif',;
-            top: 50%;
-        }
+    .slogan {
+        background-color: black;
+    }
 
+    .banner-container-cajita p {
+        text-align: center;
+        font-family: 'PT Serif';
+        top: 50%;
+        color: white;
+    }
 
     .button-banner-pos {
-        width: 220px;
-        height: 100px;
-        margin: 45px auto;
+        width: 100%;
+        margin: 45px auto 0;
+        max-width: 220px;
     }
+
 
     .title-about-us {
         color: white;
@@ -526,7 +570,7 @@
         background-image: url("Content/imagenes/kisspng-tattoo-machine-tattoo.png");
         width: 17%;
         height: 36%;
-        left: 84%;
+        left: 70%;
         top: 104%;
         position: absolute;
         background-size: cover;
@@ -607,16 +651,15 @@
         height: 100%;
     }
 
-    .container-three-about-us p{
-        color:#eab60d;
-        font-size:40px;
-        border-left: 5px solid white;
-    }
+        .container-three-about-us p {
+            color: #eab60d;
+            font-size: 40px;
+            border-left: 5px solid white;
+        }
 
 
     .container-two {
         width: 85%;
-        //background-color: red;
         align-items: center;
         justify-content: space-between;
         display: flex;
@@ -642,11 +685,13 @@
         padding: 11px 23px;
         //text-decoration: none;
         text-shadow: 0px -1px 0px #2b665e;
+        width: 100%;
+        text-align: center;
     }
 
         .button-banner:hover {
             text-decoration: none;
-            //pointer-events: none;
+            
         }
 
     .header-menucala {
@@ -655,20 +700,27 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 20px
+        padding: 20px;
+        position: relative;
+        z-index: 9999;
     }
 
-        .header-menucala li a{
-            color: white;
-            //text-decoration: none;
-
+        .header-menucala li,
+        .header-menucala ul li {
+            list-style: none;
         }
-            .header-menucala li a:hover{
-                opacity: 0.2;
+
+            .header-menucala li a {
+                color: white;
+                
             }
 
-            a:hover, a:focus {
-                color: white;
-                text-decoration: none;
-            }
+                .header-menucala li a:hover {
+                    opacity: 0.2;
+                }
+
+    a:hover, a:focus {
+        color: white;
+        text-decoration: none;
+    }
 </style>
