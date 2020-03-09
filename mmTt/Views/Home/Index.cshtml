@@ -3,11 +3,17 @@
     Layout = null;
 
 }
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+</head>
+
 
 @Styles.Render("~/Content/css")
 @Scripts.Render("~/bundles/modernizr")
@@ -77,6 +83,53 @@
     </div>
 </div>
 
+@*QUE ES LO QUE HACEMOS*@
+<div id="3" class="container-gral">
+    <div>
+        <p class="title">Que es lo que hacemos.</p>
+    </div>
+    <div>
+        <p class="description">
+            Nuestra misión es brindarle arte de tatuajes original y de calidad utilizando técnicas avanzadas de esterilización, producidas en un ambiente cómodo y seguro por profesionales.
+        </p>
+    </div>
+
+    <div class="container-four">
+
+        <div class="container-inside-four">
+            <div class="maquina-ico hover1"></div>
+            <h2>Tattoos</h2>
+            <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
+            <a href="#">content</a>
+        </div>
+
+        <div class="container-inside-four">
+            <div class="pircing-ico hover2"></div>
+            <h2>Pircings</h2>
+            <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
+            <a href="#">content</a>
+        </div>
+
+        <div class="container-inside-four">
+            <div class="cover-ico hover3"></div>
+            <h2>Cover</h2>
+            <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
+            <a href="#">content</a>
+        </div>
+
+        <div class="container-inside-four">
+            <div class="desing-ico hover4"></div>
+            <h2>Tattoo Design</h2>
+            <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
+            <a href="#">content</a>
+        </div>
+
+    </div>
+
+
+
+</div>
+
 @*SOBRE NOSOTROS*@
 <div class="container-gral about-us">
     <div id="1">
@@ -134,55 +187,49 @@
     <div id="2">
         <p class="title">Nuestros trabajos</p>
     </div>
-    <div class="image-gallery"></div>
+    @*<div class="image-gallery"></div>*@
+
+    <div class="porfolio-menu">
+        <ul>
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".web">Web desing</li>
+            <li data-filter=".seo">Seo</li>
+            <li data-filter=".graphics">Graphics</li>
+        </ul>
+    </div>
+    <div class="porfolio-item">
+        <div class="item web">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-1.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item graphics">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item web">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-2.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item seo">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-1.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item web">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-3.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item web">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-4.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item web">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item graphics">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-3.jpg" alt="Alternate Text" />
+        </div>
+        <div class="item seo">
+            <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
+        </div>
+    </div>
+
 </div>
 
-@*QUE ES LO QUE HACEMOS*@
-<div id="3" class="container-gral">
-    <div>
-        <p class="title">Que es lo que hacemos.</p>
-    </div>
-    <div>
-        <p class="description">
-            Nuestra misión es brindarle arte de tatuajes original y de calidad utilizando técnicas avanzadas de esterilización, producidas en un ambiente cómodo y seguro por profesionales.
-        </p>
-    </div>
 
-    <div class="container-four">
-
-        <div class="container-inside-four">
-            <div class="maquina-ico hover1"></div>
-            <h2>Tattoos</h2>
-            <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
-            <a href="#">content</a>
-        </div>
-
-        <div class="container-inside-four">
-            <div class="pircing-ico hover2"></div>
-            <h2>Pircings</h2>
-            <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
-            <a href="#">content</a>
-        </div>
-
-        <div class="container-inside-four">
-            <div class="cover-ico hover3"></div>
-            <h2>Cover</h2>
-            <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
-            <a href="#">content</a>
-        </div>
-
-        <div class="container-inside-four">
-            <div class="desing-ico hover4"></div>
-            <h2>Tattoo Design</h2>
-            <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
-            <a href="#">content</a>
-        </div>
-
-    </div>
-
-
-
-</div>
 
 @*NUESTROS ARTISTAS*@
 <div class="container-gral">
@@ -233,6 +280,8 @@
 <div class="footer">
 
 </div>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script>
 
     $(document).ready(function () {
@@ -280,9 +329,73 @@
             $(".container-three").html(galleryDinamyc);
         });
 
+
+    $(".profolio-item").isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+    });
+
+    $(".porfolio-menu ul li").click(function () {
+
+        $('.porfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+
+        $('.porfolio-item').isotope({
+            filter: selector
+        });
+        return false;
+
+
+    });
+
+
 </script>
 
 <style>
+
+    .porfolio-menu {
+        text-align: center;
+        padding: 25px;
+    }
+
+        .porfolio-menu ul li {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: 1px solid tomato;
+            -webkit-transition: all .5 ease;
+            -moz-transition: all .5 ease;
+            -o-transition: all .5 ease;
+            -webkit-transition: all .5 ease;
+            transition: all .5 ease;
+        }
+
+            .porfolio-menu ul li:hover {
+                background: tomato;
+                color: white;
+            }
+
+    .porfolio-item {
+        width: 100%;
+    }
+
+        .porfolio-item .item {
+            width: 303px;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+            .porfolio-item .item img {
+                width: 300px;
+                height: 360px;
+                margin: -1px 25%;
+            }
+
+
 
     .overlay {
         position: absolute;
@@ -505,7 +618,7 @@
     }
 
     .banner-container-cajita {
-        width: 25%;
+        width: 35%;
         margin: 10px auto;
     }
 
@@ -552,7 +665,7 @@
     }
 
     .about-description b {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .about-img {
@@ -579,6 +692,7 @@
 
 
     .title {
+        color:gray;
         padding: 15px 15px;
         margin-bottom: 30px;
         font-size: 52px;
@@ -691,7 +805,6 @@
 
         .button-banner:hover {
             text-decoration: none;
-            
         }
 
     .header-menucala {
@@ -712,7 +825,6 @@
 
             .header-menucala li a {
                 color: white;
-                
             }
 
                 .header-menucala li a:hover {
