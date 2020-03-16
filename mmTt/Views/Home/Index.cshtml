@@ -4,60 +4,79 @@
 
 }
 
-    <head>
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
 
-        @*//Valla test*@
-
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
-
-
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 
-@Styles.Render("~/Content/css")
-@Scripts.Render("~/bundles/modernizr")
-@Scripts.Render("~/bundles/jquery")
+    @*//Valla test*@
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
 
 
 
-<div class="banner-principal">
-    <div class="overlay"></div>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
 
-    <div class="video-player">
-        <video onloadedmetadata="this.muted=true" autoplay muted="muted" loop>
-            <source src="Content/imagenes/slow-tattoo-video.mp4" type="video/mp4" />
-        </video>
-    </div>
 
-    <div class="navbara navbar-inversea navbar-fixed-topa header-menucala">
-        <div class="container">
-            <div class="navbar-collapse collapse">
-                <ul class="nava navbar-nava header-menucala">
-                    <li><a class="path" href="#1">MORANTE TATTOO STUDIO</a></li>
-                    <li><a class="path" href="#1">NOSOTROS</a></li>
-                    <li><a class="path" href="#2">TRABAJOS</a></li>
-                    <li><a class="path" href="#3">LO QUE HACEMOS</a></li>
-                    <li><a class="path" href="#4">NUESTROS ARTISTAS</a></li>
-                    <li><a class="path" href="#5">COMO LLEGAR</a></li>
-                </ul>
+    <div class="banner-principal">
+        <div class="overlay"></div>
+
+        <div class="video-player">
+            <video onloadedmetadata="this.muted=true" autoplay muted="muted" loop>
+                <source src="Content/imagenes/slow-tattoo-video.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="navbara navbar-inversea navbar-fixed-topa header-menucala">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nava navbar-nava header-menucala">
+                        <li><a class="path" href="#1">MORANTE TATTOO STUDIO</a></li>
+                        <li><a class="path" href="#1">NOSOTROS</a></li>
+                        <li><a class="path" href="#2">TRABAJOS</a></li>
+                        <li><a class="path" href="#3">LO QUE HACEMOS</a></li>
+                        <li><a class="path" href="#4">NUESTROS ARTISTAS</a></li>
+                        <li><a class="path" href="#5">COMO LLEGAR</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <div class="banner-logo-sinfondo">
+            <img src="Content/imagenes/logo-pro-pluma-nofondo.png" alt="Logo - Morante" />
+        </div>
+
+        @*<div class="banner-container-cajita">
+
+
+                <p class="banner-bajada"><i>Good Tattoo is...</i></p>
+                <p class="banner-bajada2"><i>an Extension of the <br>Character and Your <br>State of Soul</i></p>
+
+
+
+                <div class="button-banner-pos">
+
+                    <a class="button-banner" href="https://wa.me/5491169297777" target="_blank">RESERVA TU TURNO</a>
+                </div>
+
+            </div>*@
     </div>
 
-    <div class="banner-logo-sinfondo">
-        <img src="Content/imagenes/logo-pro-pluma-nofondo.png" alt="Logo - Morante" />
-    </div>
-
-    @*<div class="banner-container-cajita">
+    @**slogan*@
+    <div class="container-gral slogan">
+        <div class="banner-container-cajita">
 
 
             <p class="banner-bajada"><i>Good Tattoo is...</i></p>
@@ -70,413 +89,495 @@
                 <a class="button-banner" href="https://wa.me/5491169297777" target="_blank">RESERVA TU TURNO</a>
             </div>
 
-        </div>*@
-</div>
-
-@**slogan*@
-<div class="container-gral slogan">
-    <div class="banner-container-cajita">
-
-
-        <p class="banner-bajada"><i>Good Tattoo is...</i></p>
-        <p class="banner-bajada2"><i>an Extension of the <br>Character and Your <br>State of Soul</i></p>
-
-
-
-        <div class="button-banner-pos">
-
-            <a class="button-banner" href="https://wa.me/5491169297777" target="_blank">RESERVA TU TURNO</a>
         </div>
-
-    </div>
-</div>
-
-@*QUE ES LO QUE HACEMOS*@
-<div id="3" class="container-gral">
-    <div>
-        <p class="title">QUE ES LO QUE HACEMOS</p>
-    </div>
-    <div>
-        <p class="description">
-            Nuestra misión es brindarle arte de tatuajes original y de calidad utilizando técnicas avanzadas de esterilización, producidas en un ambiente cómodo y seguro por profesionales.
-        </p>
     </div>
 
-    <div class="container-four">
-
-        <div class="container-inside-four">
-            <div class="maquina-ico hover1"></div>
-            <h2>Tattoos</h2>
-            <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
-            <a href="#">content</a>
+    @*QUE ES LO QUE HACEMOS*@
+    <div id="3" class="container-gral">
+        <div class="container-maquinaflota aparece">
+            <div class="maquina-tattoo"></div>
         </div>
-
-        <div class="container-inside-four">
-            <div class="pircing-ico hover2"></div>
-            <h2>Pircings</h2>
-            <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
-            <a href="#">content</a>
+        <div>
+            <p class="title">QUE ES LO QUE HACEMOS</p>
         </div>
-
-        <div class="container-inside-four">
-            <div class="cover-ico hover3"></div>
-            <h2>Cover</h2>
-            <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
-            <a href="#">content</a>
-        </div>
-
-        <div class="container-inside-four">
-            <div class="desing-ico hover4"></div>
-            <h2>Tattoo Design</h2>
-            <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
-            <a href="#">content</a>
-        </div>
-
-    </div>
-
-
-
-</div>
-
-@*SOBRE NOSOTROS*@
-<div class="container-gral about-us">
-    <div id="1">
-        <p class="title title-about-us">Sobre Nosotros</p>
-    </div>
-
-    <div class="container-two">
-        <div class="about-img">
-
-        </div>
-
-        <div class="about-description">
-
-            <b>Nosotros somos un equipo de tatuadores profecionales</b>
-            <br />
-            <br />
-            <p>
-                Nuestro salón de tatuajes es el hogar de talentosos tatuadores listos para convertir su cuerpo en un lienzo con bellas imágenes.
+        <div>
+            <p class="description">
+                Nuestra misión es brindarle arte de tatuajes original y de calidad utilizando técnicas avanzadas de esterilización, producidas en un ambiente cómodo y seguro por profesionales.
             </p>
+        </div>
 
-            <p>
-                Hemos reunido al mejor equipo de tatuadores que trabajan a tiempo completo en nuestro salón, y tenemos artistas invitados fantásticos que visitan nuestra tienda.
-            </p>
 
-            <div class="container-three-about-us">
-                <div class="">
-                    <p>1000</p>
-                    <br />
-                    <h1>Reviews</h1>
-                </div>
-                <div>
-                    <p>1580</p>
-                    <br />
-                    <h1>Tattoos</h1>
-                </div>
-                <div>
-                    <p>975</p>
-                    <br />
-                    <h1>Happy Clients</h1>
-                </div>
+
+
+
+        <div class="container-four">
+
+            <div class="container-inside-four">
+                <div class="maquina-ico hover1 aparece"></div>
+                <h2>Tattoos</h2>
+                <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
+                <a href="#">content</a>
+            </div>
+
+            <div class="container-inside-four">
+                <div class="pircing-ico hover2 aparece"></div>
+                <h2>Piercings</h2>
+                <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
+                <a href="#">content</a>
+            </div>
+
+            <div class="container-inside-four">
+                <div class="cover-ico hover3 aparece"></div>
+                <h2>Cover</h2>
+                <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
+                <a href="#">content</a>
+            </div>
+
+            <div class="container-inside-four">
+                <div class="desing-ico hover4 aparece"></div>
+                <h2>Tattoo Design</h2>
+                <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
+                <a href="#">content</a>
             </div>
 
         </div>
 
-        <div class="maquina-tattoo"></div>
 
 
     </div>
 
-</div>
+    @*SOBRE NOSOTROS*@
+    <div class="container-gral about-us">
+            
 
+        <div id="1">
+            <p class="title title-about-us" style="color:white;">Sobre Nosotros</p>
+        </div>
 
-@*NUESTROS TRABAJOS*@
-<div class="container-gral">
-    <div id="2">
-        <p class="title">Nuestros trabajos</p>
-    </div>
-    @*<div class="image-gallery"></div>*@
+        <div class="container-two">
+            @*<div class="about-img">
 
-    <div class="porfolio-menu">
-        <ul>
-            <li class="active" data-filter="*">All</li>
-            <li data-filter=".web">Web desing</li>
-            <li data-filter=".seo">Seo</li>
-            <li data-filter=".graphics">Graphics</li>
-        </ul>
-    </div>
-    <div class="porfolio-item">
-        <div class="item web">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-1.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item graphics">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item web">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-2.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item seo">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-1.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item web">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-3.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item web">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-4.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item web">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item graphics">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-3.jpg" alt="Alternate Text" />
-        </div>
-        <div class="item seo">
-            <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
-        </div>
-    </div>
+            </div>*@
+            <div>
+                vacio
+            </div>
 
-</div>
+            <div class="about-description">
+
+                <b>Nosotros somos un equipo de tatuadores profecionales</b>
+                <br />
+                <br />
+                <p>
+                    Nuestro salón de tatuajes es el hogar de talentosos tatuadores listos para convertir su cuerpo en un lienzo con bellas imágenes.
+                </p>
 
 
 
-@*NUESTROS ARTISTAS*@
-<div class="container-gral">
-    <div class="artist-marmol">
-        <div id="4">
-            <p class="title" style="color:white;">Nuestros artistas</p>
-        </div>
-        <div>
-            <p class=" description" style="color:white;">
-                Nuestro equipo de tatuadores representa la verdadera profesionalidad y dedicación en todo lo que concierne a los tatuajes duraderos y de alta calidad.
-            </p>
-        </div>
+                <div class="container-three-about-us">
+                    <div class="">
+                        <p>1000</p>
+                        <br />
+                        <h1>Reviews</h1>
+                    </div>
+                    <div>
+                        <p>1580</p>
+                        <br />
+                        <h1>Tattoos</h1>
+                    </div>
+                    <div>
+                        <p>975</p>
+                        <br />
+                        <h1>Happy Clients</h1>
+                    </div>
+                </div>
 
-
-
-        <div class="container-three">
+            </div>
 
 
 
 
         </div>
-
-
 
     </div>
 
 
+    @*NUESTROS TRABAJOS*@
+    <div class="container-gral">
+        <div id="2">
+            <p class="title">Nuestros trabajos</p>
+        </div>
+        @*<div class="image-gallery"></div>*@
 
-</div>
+        <div class="porfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">Todos</li>
+                <li data-filter=".web">Matias</li>
+                <li data-filter=".seo">Marcos</li>
+                <li data-filter=".graphics">Colombiano</li>
+            </ul>
+        </div>
+        <div class="porfolio-item">
+            <div class="item web">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-1.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item graphics">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item web">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-2.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item seo">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-1.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item web">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-3.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item web">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-4.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item web">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item graphics">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-3.jpg" alt="Alternate Text" />
+            </div>
+            <div class="item seo">
+                <img src="Content/imagenes/trabajos-matias/matias-tattoo-5.jpg" alt="Alternate Text" />
+            </div>
+        </div>
 
-@*COMO LLEGAR*@
-<div class="container-gral">
+    </div>
 
-    <div class="title"> Como llegar? </div>
 
-    <div class="container-two">
-        <div class="ubication">mapa</div>
-        <div style="text-align:center">
-            Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
-            Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
-            wa.me/5491169297777
+
+    @*NUESTROS ARTISTAS*@
+    <div class="container-gral">
+        <div class="artist-marmol">
+            <div id="4">
+                <p class="title" style="color:white;">Nuestros artistas</p>
+            </div>
+            <div>
+                <p class=" description" style="color:white;">
+                    Nuestro equipo de tatuadores representa la verdadera profesionalidad y dedicación en todo lo que concierne a los tatuajes duraderos y de alta calidad.
+                </p>
+            </div>
+
+
+
+            <div class="container-three">
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    @*COMO LLEGAR*@
+    <div class="container-gral">
+
+        <div class="title"> COMO LLEGAR </div>
+
+        <div class="container-two">
+            <div class="ubication">mapa</div>
+            <div style="text-align:center">
+                Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
+                Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
+                wa.me/5491169297777
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-gral">
+        <div class="title"> CONTACTO </div>
+
+        <div class="container-three-ubication">
+            <div>Correo</div>
+            <div>
+                <img src="Content/imagenes/ubication-ico.png" alt="Alternate Text" />
+                <p>Sucursal Lomas de Zamora</p>
+                <p> <b>Dirección: </b> Av. Pres. Hipólito Yrigoyen 10151, B1834 Temperley, Buenos Aires</p>
+            </div>
+            <div>
+                <p>
+                    <b>Teléfono:</b>
+                </p>
+                <p>
+                    011 15-6929-7777
+                </p>
+            </div>
         </div>
     </div>
 
-</div>
+    <div class="footer">
 
+    </div>
 
-<div class="footer">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
 
-</div>
-
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script>
-
-    $(document).ready(function () {
-        $('a[href^="#"]').click(function () {
-            var destino = $(this.hash);
-            if (destino.length == 0) {
-                destino = $('a[name="' + this.hash.substr(1) + '"]');
-            }
-            if (destino.length == 0) {
-                destino = $('html');
-            }
-            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-            return false;
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+                var destino = $(this.hash);
+                if (destino.length == 0) {
+                    destino = $('a[name="' + this.hash.substr(1) + '"]');
+                }
+                if (destino.length == 0) {
+                    destino = $('html');
+                }
+                $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+                return false;
+            });
         });
-    });
 
 
-    //    {
-    //  "id": "1",
-    //  "url": "COntent/asdasd/asd.jpg",
-    //  "title": "Morante Matias",
-    //  "description": "Cubismo,geometria"
-    //}
+        //    {
+        //  "id": "1",
+        //  "url": "COntent/asdasd/asd.jpg",
+        //  "title": "Morante Matias",
+        //  "description": "Cubismo,geometria"
+        //}
 
 
-    $.ajax({
-        //data:
-        type: "GET",
-        dataType: "json",
-        url: "Content/imagenes/galery.json"
-    })
-        .done(function (data) {
+        $.ajax({
+            //data:
+            type: "GET",
+            dataType: "json",
+            url: "Content/imagenes/galery.json"
+        })
+            .done(function (data) {
 
-            var galleryDinamyc = '';
+                var galleryDinamyc = '';
 
-            $.each(data.jsonPhotos, function (i, item) {
-                galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + item.url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + item.title + '"</b>                        <p>Estilos: "' + item.description + '"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+                $.each(data.jsonPhotos, function (i, item) {
+                    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="' + item.url + '" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"' + item.title + '"</b>                        <p>Estilos: "' + item.description + '"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
 
+                });
+
+                //for (var i = 0; i < data.length(); i++) {
+                //    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
+                //}
+
+                $(".container-three").html(galleryDinamyc);
             });
 
-            //for (var i = 0; i < data.length(); i++) {
-            //    galleryDinamyc += '<div class="container-inside-three"> <div class="artist-container"><img src="'+data.url+'" alt="Alternate Text" /><div class="artist-img-2"></div><div class="artist-description">                        <b>"'+data.title+'"</b>                        <p>Estilos: "'+data.description+'"</p>                        <a href="#">content</a>                    </div>                </div>            </div>';
-            //}
 
-            $(".container-three").html(galleryDinamyc);
+        $(".profolio-item").isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+
+        $(".porfolio-menu ul li").click(function () {
+
+            $('.porfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+
+            var selector = $(this).attr('data-filter');
+
+            $('.porfolio-item').isotope({
+                filter: selector
+            });
+            return false;
+
+
         });
 
 
-    $(".profolio-item").isotope({
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-    });
-
-    $(".porfolio-menu ul li").click(function () {
-
-        $('.porfolio-menu ul li').removeClass('active');
-        $(this).addClass('active');
-
-        var selector = $(this).attr('data-filter');
-
-        $('.porfolio-item').isotope({
-            filter: selector
-        });
-        return false;
+    </script>
 
 
-    });
 
-
-</script>
-
-<style>
-
-    .porfolio-menu {
-        text-align: center;
-        padding: 25px;
-    }
-
-        .porfolio-menu ul li {
-            display: inline-block;
-            margin: 0;
-            list-style: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border: 1px solid tomato;
-            -webkit-transition: all .5 ease;
-            -moz-transition: all .5 ease;
-            -o-transition: all .5 ease;
-            -webkit-transition: all .5 ease;
-            transition: all .5 ease;
+    <style>
+        .container-three-ubication div{
+            width: 33%;
+            margin: 0 auto;
+            text-align:center;
         }
 
-            .porfolio-menu ul li:hover {
-                background: tomato;
-                color: white;
-            }
-
-    .porfolio-item {
-        width: 100%;
-    }
-
-        .porfolio-item .item {
-            width: 303px;
-            float: left;
-            margin-bottom: 10px;
+        .container-three-ubication img {
+            width: 15%;
+            height: 20%;
         }
 
-            .porfolio-item .item img {
-                width: 300px;
-                height: 360px;
-                margin: -1px 25%;
-            }
-
-
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: black;
-        z-index: 2;
-        opacity: 0.5;
-    }
-
-    .video-player {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        overflow: hidden;
-    }
-
-        .video-player video {
-            height: auto;
-            width: 100%;
+        .container-maquinaflota {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+            width: 14%;
+            height: 41%;
+        }
+
+        .aparece {
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        .porfolio-menu {
+            text-align: center;
+            padding: 25px;
+        }
+
+            .porfolio-menu ul li {
+                display: inline-block;
+                margin: 0;
+                list-style: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                border: 1px solid tomato;
+                -webkit-transition: all .5 ease;
+                -moz-transition: all .5 ease;
+                -o-transition: all .5 ease;
+                -webkit-transition: all .5 ease;
+                transition: all .5 ease;
+            }
+
+                .porfolio-menu ul li:hover {
+                    background: tomato;
+                    color: white;
+                }
+
+        .porfolio-item {
+            width: 100%;
+            height:1104px;
+        }
+
+            .porfolio-item .item {
+                width: 303px;
+                float: left;
+                margin-bottom: 10px;
+            }
+
+                .porfolio-item .item img {
+                    width: 300px;
+                    height: 360px;
+                    margin: -1px 25%;
+                }
+
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            z-index: 2;
+            opacity: 0.5;
+        }
+
+        .video-player {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+            .video-player video {
+                height: auto;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+
+        .loguito-head {
+            color: #eac80f;
+        }
+
+        .banner-container-cajita .banner-bajada {
+            color: #eac80f;
+            font-size: 30px;
+            padding: 10px 0px
+        }
+
+        .banner-container-cajita .banner-bajada2 {
+            //color: gold;
+            font-size: 52px;
+        }
+
+        .artist-marmol {
+            padding: 20px 10px;
+            height: 500px;
+            background-image: url(Content/imagenes/fondo-horizontal-sinlogo.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .artist-description {
+            background-color: white;
+            position: absolute;
+            left: 124px;
+            top: 66%;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .artist-container {
+            position: relative;
+        }
+
+            .artist-container img {
+                margin-top: 300px;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 200px;
+                border-radius: 5px;
+            }
+
+
+        .ubication {
+            background-image: url("Content/imagenes/ubicacion.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            //background-color: #22222296;
+        }
+
+        .container-gral {
+            padding: 40px 0 60px;
+        }
+
+        .path {
+            transition: 1s;
+        }
+
+        .footer {
+            height: 300px;
+            width: 100%;
+            background-color: gray;
+        }
+
+        .container-inside-three {
+            width: 30%;
+            text-align: center;
         }
 
 
-    .loguito-head {
-        color: #eac80f;
-    }
 
-    .banner-container-cajita .banner-bajada {
-        color: #eac80f;
-        font-size: 30px;
-        padding: 10px 0px
-    }
-
-    .banner-container-cajita .banner-bajada2 {
-        //color: gold;
-        font-size: 52px;
-    }
-
-    .artist-marmol {
-        padding: 20px 10px;
-        height: 500px;
-        background-image: url("Content/imagenes/fondo-marmol-5.jpg");
-        // background-size: cover;
-        //background-position: center center;
-        //background-repeat: no-repeat;
-    }
-
-    .artist-description {
-        background-color: white;
-        position: absolute;
-        left: 124px;
-        top: 66%;
-        width: 200px;
-        border-radius: 5px;
-    }
-
-    .artist-container {
-        position: relative;
-    }
-
-        .artist-container img {
-            margin-top: 300px;
+        .artist-img-2 {
+            //background-image: url("Content/imagenes/marcos-kimo.jpg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -486,361 +587,355 @@
         }
 
 
-    .ubication {
-        background-image: url("Content/imagenes/ubicacion.png");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 500px;
-    }
 
-    body {
-        font-family: 'Roboto', sans-serif;
-        //background-color: #22222296;
-    }
-
-    .container-gral {
-        padding: 40px 0 60px;
-    }
-
-    .path {
-        transition: 1s;
-    }
-
-    .footer {
-        height: 300px;
-        width: 100%;
-        background-color: gray;
-    }
-
-    .container-inside-three {
-        width: 30%;
-        text-align: center;
-    }
-
-
-
-    .artist-img-2 {
-        //background-image: url("Content/imagenes/marcos-kimo.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
-        border-radius: 5px;
-    }
-
-
-
-    .container-inside-four {
-        width: 25%;
-        text-align: center;
-    }
-
-        .container-inside-four h2 {
-            font-size: 24px;
-            padding: 7px 10px;
+        .container-inside-four {
+            width: 25%;
+            text-align: center;
         }
 
-        .container-inside-four p {
-            font-size: 14px;
-            width: 100%;
-            padding: 10px 10px;
-        }
-
-    .maquina-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/maquina-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
-
-    .pircing-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/pircing-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
-
-    .cover-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/cover-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
-
-    .desing-ico {
-        margin: auto auto;
-        background-image: url("Content/imagenes/desing-ico.png");
-        width: 100px;
-        background-size: cover;
-        height: 100px;
-    }
-
-    .image-gallery {
-        background-image: url("Content/imagenes/banner.jpg");
-        width: 100%;
-        height: 200px;
-    }
-
-    .banner-principal p {
-        font-size: 70px;
-        color: white;
-    }
-
-    .banner-description {
-        font-size: 30px;
-        color: white;
-    }
-
-
-
-    .banner-logo-sinfondo {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
-        width: 100%;
-        height: 65%;
-        z-index: 3;
-    }
-
-        .banner-logo-sinfondo img {
-            height: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-
-    .banner-principal {
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        background-image: url("Content/imagenes/fondo-horizontal-sinlogo.jpg");
-    }
-
-    .banner-container-cajita {
-        width: 35%;
-        margin: 10px auto;
-    }
-
-    .slogan {
-        background-color: black;
-    }
-
-    .banner-container-cajita p {
-        text-align: center;
-        font-family: 'PT Serif';
-        top: 50%;
-        color: white;
-    }
-
-    .button-banner-pos {
-        width: 100%;
-        margin: 45px auto 0;
-        max-width: 220px;
-    }
-
-
-    .title-about-us {
-        color: white;
-    }
-
-
-    .about-description {
-        text-align: center;
-        color: #eac80d;
-        font-size: 18px;
-        width: 50%;
-    }
-
-    .about-us {
-        background-image: url("Content/imagenes/matias-morantte-hd-gradient.png");
-        background-position: center center;
-        background-size: cover;
-        height: 100%;
-    }
-
-    .about-description p {
-        padding: 10px;
-        color: white;
-    }
-
-    .about-description b {
-        font-size: 21px;
-    }
-
-    .about-img {
-        background-image: url("Content/imagenes/matias-morantte-hd.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 350px;
-        width: 54%;
-        border-radius: 5px;
-    }
-
-
-
-    .maquina-tattoo {
-        background-image: url("Content/imagenes/kisspng-tattoo-machine-tattoo.png");
-        width: 17%;
-        height: 36%;
-        left: 70%;
-        top: 104%;
-        position: absolute;
-        background-size: cover;
-    }
-
-
-
-    .title {
-        color:gray;
-        padding: 15px 15px;
-        margin-bottom: 30px;
-        font-size: 52px;
-        text-align: center;
-        font-family: 'PT Serif';
-    }
-
-    .description {
-        font-size: 20px;
-        margin: auto auto;
-        width: 75%;
-        text-align: center;
-        padding: 10px 10px;
-        font-family: 'PT Serif';
-    }
-
-    .container-four {
-        width: 83%;
-        //background-color: red;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin: 35px auto;
-        transition: all .2s ease-in-out;
-    }
-
-
-
-
-    .hover1:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-
-    .hover2:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-
-    .hover3:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-
-    .hover4:hover {
-        transition: all .2s ease-in-out;
-        transform: scale(1.2);
-    }
-
-    .container-three {
-        width: 75%;
-        //background-color: red;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin: auto auto;
-        height: 200px;
-    }
-
-    .container-three-about-us {
-        width: 75%;
-        //background-color: red;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin: auto auto;
-        height: 100%;
-    }
-
-        .container-three-about-us p {
-            color: #eab60d;
-            font-size: 40px;
-            border-left: 5px solid white;
-        }
-
-
-    .container-two {
-        width: 85%;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        margin: auto auto;
-    }
-
-    .button-banner {
-        -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
-        -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
-        box-shadow: inset 0px 1px 3px 0px #91b8b3;
-        background-color: transparent;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 8px;
-        border: 1px solid #eac80f;
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-family: Arial;
-        font-size: 15px;
-        font-weight: bold;
-        padding: 11px 23px;
-        //text-decoration: none;
-        text-shadow: 0px -1px 0px #2b665e;
-        width: 100%;
-        text-align: center;
-    }
-
-    .button-banner:hover {
-        text-decoration: none;
-    }
-
-    .header-menucala {
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding: 20px;
-        position: relative;
-        z-index: 9999;
-    }
-
-        .header-menucala li,
-        .header-menucala ul li {
-            list-style: none;
-        }
-
-            .header-menucala li a {
-                color: white;
+            .container-inside-four h2 {
+                font-size: 24px;
+                padding: 7px 10px;
             }
 
-                .header-menucala li a:hover {
-                    opacity: 0.2;
+            .container-inside-four p {
+                font-size: 14px;
+                width: 100%;
+                padding: 10px 10px;
+            }
+
+        .maquina-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/maquina-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
+
+        .pircing-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/pircing-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
+
+        .cover-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/cover-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
+
+        .desing-ico {
+            margin: auto auto;
+            background-image: url("Content/imagenes/desing-ico.png");
+            width: 100px;
+            background-size: cover;
+            height: 100px;
+        }
+
+        .image-gallery {
+            background-image: url("Content/imagenes/banner.jpg");
+            width: 100%;
+            height: 200px;
+        }
+
+        .banner-principal p {
+            font-size: 70px;
+            color: white;
+        }
+
+        .banner-description {
+            font-size: 30px;
+            color: white;
+        }
+
+
+
+        .banner-logo-sinfondo {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            width: 100%;
+            height: 65%;
+            z-index: 3;
+        }
+
+            .banner-logo-sinfondo img {
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+        .banner-principal {
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-image: url("Content/imagenes/fondo-horizontal-sinlogo.jpg");
+        }
+
+        .banner-container-cajita {
+            width: 35%;
+            margin: 10px auto;
+        }
+
+        .slogan {
+            background-color: black;
+        }
+
+        .banner-container-cajita p {
+            text-align: center;
+            font-family: 'PT Serif';
+            top: 50%;
+            color: white;
+        }
+
+        .button-banner-pos {
+            width: 100%;
+            margin: 45px auto 0;
+            max-width: 220px;
+        }
+
+
+        .title-about-us {
+            color: white;
+        }
+
+
+        .about-description {
+            text-align: center;
+            color: #eac80d;
+            font-size: 18px;
+            width: 50%;
+        }
+
+        .about-us {
+            background-image: url("Content/imagenes/matias-morantte-hd.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 100%;
+            
+        }
+
+        .about-description p {
+            padding: 10px;
+            color: white;
+        }
+
+        .about-description b {
+            font-size: 21px;
+        }
+
+        .about-img {
+            background-image: url("Content/imagenes/matias-morantte-hd.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 350px;
+            width: 54%;
+            border-radius: 5px;
+        }
+
+
+
+        .maquina-tattoo {
+            background-image: url(Content/imagenes/kisspng-tattoo-machine-tattoo.png);
+            width: 129%;
+            height: 100%;
+            
+            position: relative;
+            background-size: cover;
+        }
+
+
+
+        .title {
+            color: gray;
+            padding: 15px 15px;
+            margin-bottom: 30px;
+            font-size: 52px;
+            text-align: center;
+            font-family: 'PT Serif';
+        }
+
+        .description {
+            font-size: 20px;
+            margin: auto auto;
+            width: 75%;
+            text-align: center;
+            padding: 10px 10px;
+            font-family: 'PT Serif';
+        }
+
+        .container-four {
+            width: 83%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: 35px auto;
+            transition: all .2s ease-in-out;
+        }
+
+
+
+
+        .hover1:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .hover2:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .hover3:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .hover4:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.2);
+        }
+
+        .container-three {
+            width: 75%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+            height: 200px;
+        }
+        .container-three-ubication {
+            width: 75%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+            height: 200px;
+        }
+
+        .container-three-about-us {
+            width: 75%;
+            //background-color: red;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+            height: 100%;
+        }
+
+            .container-three-about-us p {
+                color: #eab60d;
+                font-size: 40px;
+                border-left: 5px solid white;
+            }
+
+
+        .container-two {
+            width: 85%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            margin: auto auto;
+        }
+
+        .button-banner {
+            -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            background-color: transparent;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 8px;
+            border: 1px solid #eac80f;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 11px 23px;
+            //text-decoration: none;
+            text-shadow: 0px -1px 0px #2b665e;
+            width: 100%;
+            text-align: center;
+        }
+
+            .button-banner:hover {
+                text-decoration: none;
+            }
+
+        .header-menucala {
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            z-index: 9999;
+        }
+
+            .header-menucala li,
+            .header-menucala ul li {
+                list-style: none;
+            }
+
+                .header-menucala li a {
+                    color: white;
                 }
 
-    a:hover, a:focus {
-        color: white;
-        text-decoration: none;
-    }
-</style>
+                    .header-menucala li a:hover {
+                        opacity: 0.2;
+                    }
+
+        a:hover, a:focus {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        function aparece() {
+            
+            var html = document.getElementsByTagName("body")[0];
+            var elementoAparece = document.getElementsByClassName("aparece");
+
+            document.addEventListener("wheel", function () {
+
+                var topVent = html.scrollTop;
+
+                for (var i = 0; i < elementoAparece.length; i++) {
+
+                    var topelemAparece = elementoAparece[i].offsetTop;
+
+                    if (topVent > topelemAparece - 400) {
+                        elementoAparece[i].style.opacity = 1;
+                    }
+                }
+
+
+            });
+
+        }
+        $(document).ready(function () {
+            aparece();
+        });
+    </script>
+</body>
+</html>
