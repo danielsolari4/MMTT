@@ -116,28 +116,28 @@
                 <div class="maquina-ico hover1 aparece"></div>
                 <h2>Tattoos</h2>
                 <p>Combinamos técnicas modernas con algunas tradicionales para obtener resultados brillantes</p>
-                <a href="#">content</a>
+
             </div>
 
             <div class="container-inside-four">
                 <div class="pircing-ico hover2 aparece"></div>
                 <h2>Piercings</h2>
                 <p>Queres algunos agujeros extras en tu cuerpo? Nuestros maestros pueden ayudarte</p>
-                <a href="#">content</a>
+
             </div>
 
             <div class="container-inside-four">
                 <div class="cover-ico hover3 aparece"></div>
                 <h2>Cover</h2>
                 <p>Tenes tatuajes viejos para tapar? Nuestros talentosos artistas pueden cubrirlos.</p>
-                <a href="#">content</a>
+
             </div>
 
             <div class="container-inside-four">
                 <div class="desing-ico hover4 aparece"></div>
                 <h2>Tattoo Design</h2>
                 <p>Nada puede superar el desafío de crear un diseño que inicialmente solo está en tu imaginación</p>
-                <a href="#">content</a>
+
             </div>
 
         </div>
@@ -148,26 +148,32 @@
 
     @*SOBRE NOSOTROS*@
     <div class="container-gral about-us">
-            
+        <div class="overlay"></div>
 
-        <div id="1">
-            <p class="title title-about-us" style="color:white;">Sobre Nosotros</p>
-        </div>
+        @*<div id="1">
+                <p class="title title-about-us" style="color:white;">Sobre Nosotros</p>
+            </div>*@
 
         <div class="container-two">
             @*<div class="about-img">
 
-            </div>*@
+                </div>*@
             <div>
-                vacio
+
             </div>
 
             <div class="about-description">
 
-                <b>Nosotros somos un equipo de tatuadores profecionales</b>
+
+
+                <div id="1">
+                    <p class="title title-about-us" style="color:black;">Sobre Nosotros</p>
+                </div>
+
+                <b>Nosotros somos un equipo de tatuadores profesionales</b>
                 <br />
                 <br />
-                <p>
+                <p style="color:black;">
                     Nuestro salón de tatuajes es el hogar de talentosos tatuadores listos para convertir su cuerpo en un lienzo con bellas imágenes.
                 </p>
 
@@ -248,8 +254,6 @@
 
     </div>
 
-
-
     @*NUESTROS ARTISTAS*@
     <div class="container-gral">
         <div class="artist-marmol">
@@ -261,46 +265,35 @@
                     Nuestro equipo de tatuadores representa la verdadera profesionalidad y dedicación en todo lo que concierne a los tatuajes duraderos y de alta calidad.
                 </p>
             </div>
-
-
-
-            <div class="container-three">
-
-
-
-
-            </div>
-
-
-
+            <div class="container-three"></div>
         </div>
-
-
-
     </div>
 
     @*COMO LLEGAR*@
     <div class="container-gral">
+        <div class="title" id="5"> COMO LLEGAR </div>
 
-        <div class="title"> COMO LLEGAR </div>
-
-        <div class="container-two">
-            <div class="ubication">mapa</div>
-            <div style="text-align:center">
-                Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
-                Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
-                wa.me/5491169297777
-            </div>
+        <div class="containaer-two">
+            <div class="ubication"></div>
+            @*<div style="text-align:center">
+                    Av. Pdte Hipolito Yrigoyen 10151. Temperley.Buenos Aires-Argentina.
+                    Atendemos de lunes a sábado de 10 a 20hs. -matias_morante
+                    wa.me/5491169297777
+                </div>*@
         </div>
-
     </div>
 
-
     <div class="container-gral">
-        <div class="title"> CONTACTO </div>
+        @*<div class="title"> CONTACTO </div>*@
 
         <div class="container-three-ubication">
-            <div>Correo</div>
+            <div>
+                <b>Correo</b>
+                <p>
+                    <a href="mailto:morantetattoo@hotmail.com">morantetattoo@hotmail.com</a>
+
+                </p>
+            </div>
             <div>
                 <img src="Content/imagenes/ubication-ico.png" alt="Alternate Text" />
                 <p>Sucursal Lomas de Zamora</p>
@@ -318,12 +311,13 @@
     </div>
 
     <div class="footer">
-
+        <img src="Content/imagenes/logo-pro-pluma-nofondo.png" alt="Logo - Morante" />
+        <p><b>@("@")2020 Morante Tattoo </b>Todos los derechos reservados</p>
     </div>
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
-
+        //Suavizado de scroll y anclas
         $(document).ready(function () {
             $('a[href^="#"]').click(function () {
                 var destino = $(this.hash);
@@ -339,14 +333,7 @@
         });
 
 
-        //    {
-        //  "id": "1",
-        //  "url": "COntent/asdasd/asd.jpg",
-        //  "title": "Morante Matias",
-        //  "description": "Cubismo,geometria"
-        //}
-
-
+        //Tatuadores json dinamico.
         $.ajax({
             //data:
             type: "GET",
@@ -396,10 +383,10 @@
 
 
     <style>
-        .container-three-ubication div{
+        .container-three-ubication div {
             width: 33%;
             margin: 0 auto;
-            text-align:center;
+            text-align: center;
         }
 
         .container-three-ubication img {
@@ -423,43 +410,41 @@
             padding: 25px;
         }
 
-            .porfolio-menu ul li {
-                display: inline-block;
-                margin: 0;
-                list-style: none;
-                padding: 10px 15px;
-                cursor: pointer;
-                border: 1px solid tomato;
-                -webkit-transition: all .5 ease;
-                -moz-transition: all .5 ease;
-                -o-transition: all .5 ease;
-                -webkit-transition: all .5 ease;
-                transition: all .5 ease;
-            }
+        .porfolio-menu ul li {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: 1px solid tomato;
+            -webkit-transition: all .5 ease;
+            -moz-transition: all .5 ease;
+            -o-transition: all .5 ease;
+            -webkit-transition: all .5 ease;
+            transition: all .5 ease;
+        }
 
-                .porfolio-menu ul li:hover {
-                    background: tomato;
-                    color: white;
-                }
+        .porfolio-menu ul li:hover {
+            background: tomato;
+            color: white;
+        }
 
         .porfolio-item {
             width: 100%;
-            height:1104px;
+            height: 1104px;
         }
 
-            .porfolio-item .item {
-                width: 303px;
-                float: left;
-                margin-bottom: 10px;
-            }
+        .porfolio-item .item {
+            width: 303px;
+            float: left;
+            margin-bottom: 10px;
+        }
 
-                .porfolio-item .item img {
-                    width: 300px;
-                    height: 360px;
-                    margin: -1px 25%;
-                }
-
-
+        .porfolio-item .item img {
+            width: 300px;
+            height: 360px;
+            margin: -1px 25%;
+        }
 
         .overlay {
             position: absolute;
@@ -484,15 +469,14 @@
             overflow: hidden;
         }
 
-            .video-player video {
-                height: auto;
-                width: 100%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-            }
-
+        .video-player video {
+            height: auto;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
 
         .loguito-head {
             color: #eac80f;
@@ -512,7 +496,7 @@
         .artist-marmol {
             padding: 20px 10px;
             height: 500px;
-            background-image: url(Content/imagenes/fondo-horizontal-sinlogo.jpg);
+            background-image: url(Content/imagenes/fondo-rulos-negro.jpg);
             background-size: cover;
             background-position: center center;
         }
@@ -520,7 +504,7 @@
         .artist-description {
             background-color: white;
             position: absolute;
-            left: 124px;
+            left: 61%;
             top: 66%;
             width: 200px;
             border-radius: 5px;
@@ -530,19 +514,18 @@
             position: relative;
         }
 
-            .artist-container img {
-                margin-top: 300px;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 200px;
-                border-radius: 5px;
-            }
-
+        .artist-container img {
+            margin-top: 300px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
 
         .ubication {
-            background-image: url("Content/imagenes/ubicacion.png");
+            background-image: url("Content/imagenes/ubicacion-2.png");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -552,7 +535,6 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            //background-color: #22222296;
         }
 
         .container-gral {
@@ -564,9 +546,21 @@
         }
 
         .footer {
-            height: 300px;
+            display: flex;
+            align-items: center;
+            height: 180px;
             width: 100%;
-            background-color: gray;
+            background-color: #212121;
+        }
+
+        .footer p {
+            color: white;
+            margin: 10px auto;
+        }
+
+        .footer img {
+            margin-left: 20px;
+            height: 100%;
         }
 
         .container-inside-three {
@@ -574,10 +568,7 @@
             text-align: center;
         }
 
-
-
         .artist-img-2 {
-            //background-image: url("Content/imagenes/marcos-kimo.jpg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -585,8 +576,6 @@
             height: 200px;
             border-radius: 5px;
         }
-
-
 
         .container-inside-four {
             width: 25%;
@@ -601,7 +590,7 @@
             .container-inside-four p {
                 font-size: 14px;
                 width: 100%;
-                padding: 10px 10px;
+                padding: 19px 44px;
             }
 
         .maquina-ico {
@@ -710,7 +699,7 @@
 
         .about-description {
             text-align: center;
-            color: #eac80d;
+            color: #ff9900;
             font-size: 18px;
             width: 50%;
         }
@@ -720,7 +709,7 @@
             background-position: center center;
             background-size: cover;
             height: 100%;
-            
+            position: relative;
         }
 
         .about-description p {
@@ -746,8 +735,8 @@
         .maquina-tattoo {
             background-image: url(Content/imagenes/kisspng-tattoo-machine-tattoo.png);
             width: 129%;
-            height: 100%;
-            
+            left: -21%;
+            height: 86%;
             position: relative;
             background-size: cover;
         }
@@ -816,9 +805,9 @@
             margin: auto auto;
             height: 200px;
         }
+
         .container-three-ubication {
             width: 75%;
-            //background-color: red;
             align-items: center;
             justify-content: space-between;
             display: flex;
@@ -829,7 +818,6 @@
 
         .container-three-about-us {
             width: 75%;
-            //background-color: red;
             align-items: center;
             justify-content: space-between;
             display: flex;
@@ -839,11 +827,10 @@
         }
 
             .container-three-about-us p {
-                color: #eab60d;
+                color: #88816b;
                 font-size: 40px;
-                border-left: 5px solid white;
+                border-left: 5px solid gray;
             }
-
 
         .container-two {
             width: 85%;
@@ -852,6 +839,8 @@
             display: flex;
             flex-direction: row;
             margin: auto auto;
+            position: relative;
+            z-index: 9;
         }
 
         .button-banner {
@@ -870,7 +859,6 @@
             font-size: 15px;
             font-weight: bold;
             padding: 11px 23px;
-            //text-decoration: none;
             text-shadow: 0px -1px 0px #2b665e;
             width: 100%;
             text-align: center;
@@ -910,9 +898,11 @@
         }
     </style>
 
+
+    @*Elementos aparecen opacity*@
     <script>
         function aparece() {
-            
+
             var html = document.getElementsByTagName("body")[0];
             var elementoAparece = document.getElementsByClassName("aparece");
 
@@ -924,7 +914,7 @@
 
                     var topelemAparece = elementoAparece[i].offsetTop;
 
-                    if (topVent > topelemAparece - 400) {
+                    if (topVent > topelemAparece - 600) {
                         elementoAparece[i].style.opacity = 1;
                     }
                 }
@@ -933,9 +923,33 @@
             });
 
         }
+
+        
+
         $(document).ready(function () {
             aparece();
+
+            $(window).scroll(function (event) {
+
+                var y = $(this).scrollTop();
+
+                if (y >= 300) {
+                    $('').addClass('animate');
+                }
+
+            });
+
         });
     </script>
 </body>
 </html>
+
+<style>
+    .animate{
+        transition: 2s ease-in-out;
+        -moz-transition: 2s ease-in-out;
+        -webkit-transform: 2s ease-in-out;
+    }
+
+
+</style>
