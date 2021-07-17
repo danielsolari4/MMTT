@@ -1,0 +1,5 @@
+﻿
+
+Mejoras:
+Clickeable y zoom a las fotos.
+Calaveras movimiento onScroll
