@@ -130,8 +130,21 @@ textarea {
 }
 
 
+#cuadrado1 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+}
 
-
+#cuadrado2 {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    
+    position: relative;
+}
 @keyframes rotation {
     from {
         transform: rotateZ(50deg);
