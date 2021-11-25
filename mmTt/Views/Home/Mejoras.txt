@@ -1,5 +1,6 @@
 ﻿
-
+Repo:
+https://github.com/danielsolari4/MMTT.git
 Mejoras:
 Clickeable y zoom a las fotos.
 Calaveras movimiento onScroll
