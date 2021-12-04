@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace mmTt.Models
+namespace mmTt.Aplication.Dtos
 {
-
-
-
-    public class Producto
+    public class ProductoDto
     {
-        [Key]
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string MediaUrl { get; set; }
@@ -20,6 +14,4 @@ namespace mmTt.Models
         public DateTime PublicationDate { get; set; }
         public string Author { get; set; }
     }
-
-
 }
